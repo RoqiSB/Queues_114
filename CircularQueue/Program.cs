@@ -148,9 +148,14 @@ namespace CircularQueues
                             return;
                         default:
                             {
-                                Console.WriteLine();
+                                Console.WriteLine("Invalid option !!!");
                             }
+                            break;
                     }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Check for the values entered");
                 }
             }
         }
