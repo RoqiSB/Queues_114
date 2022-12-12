@@ -138,7 +138,18 @@ namespace CircularQueues
                             {
                                 queue.remove();
                             }
-                            break
+                            break;
+                        case '3':
+                            {
+                                queue.display();
+                            }
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine();
+                            }
                     }
                 }
             }
