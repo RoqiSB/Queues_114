@@ -50,7 +50,7 @@ namespace CircularQueues
             }
             Console.WriteLine("\nThe Element deleted fromt he queue is: " + queue_array[FRONT]
                 + "\n");
-            // Check if the queue has one lement
+            // Check if the queue has on element
             if (FRONT == REAR)
             {
                 FRONT = -1;
@@ -60,8 +60,19 @@ namespace CircularQueues
             {
                 // if the element to be deleted is at the last position of the arrray, then the value
                 // of FRONT is set to 0 i.e to the first element of the array
-                FRONT = 
+                if (FRONT == max -1)
+                    FRONT = 0;
+                else
+                    // FRONT is incremented by one if it is not the first element of array
+                    FRONT = FRONT +1;
             }
+        }
+        public void display()
+        {
+            int FRONT_position = FRONT;
+            int REAR_position = REAR;
+            // checks if the queue is empty
+            
         }
     }
 }
