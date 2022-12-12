@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace CircularQueues
+{
+    class Program
+    {
+        int FRONT, REAR, max = 5;
+        int[] queue_array = new int[5];
+    }
+}
