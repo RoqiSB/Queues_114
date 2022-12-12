@@ -45,7 +45,22 @@ namespace CircularQueues
             // Checks wheather the queue is empty
             if (FRONT == -1)
             {
-
+                Console.WriteLine("Queue underflow\n");
+                return ;
+            }
+            Console.WriteLine("\nThe Element deleted fromt he queue is: " + queue_array[FRONT]
+                + "\n");
+            // Check if the queue has one lement
+            if (FRONT == REAR)
+            {
+                FRONT = -1;
+                REAR = -1;
+            }
+            else
+            {
+                // if the element to be deleted is at the last position of the arrray, then the value
+                // of FRONT is set to 0 i.e to the first element of the array
+                FRONT = 
             }
         }
     }
